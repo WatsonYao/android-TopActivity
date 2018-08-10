@@ -25,7 +25,7 @@ public class TasksWindow {
                 Build.VERSION.SDK_INT <= Build.VERSION_CODES.N ?
                 WindowManager.LayoutParams.TYPE_TOAST: WindowManager.LayoutParams.TYPE_PHONE, 0x18,
                 PixelFormat.TRANSLUCENT);
-        sWindowParams.gravity = Gravity.LEFT + Gravity.TOP;
+        sWindowParams.gravity = Gravity.RIGHT + Gravity.TOP;
         sView = LayoutInflater.from(context).inflate(R.layout.window_tasks,
                 null);
     }
