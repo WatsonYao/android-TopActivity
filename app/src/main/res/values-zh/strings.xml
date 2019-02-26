@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">当前Activity</string>
+    <string name="app_name">TopActivity</string>
 
     <string name="shortcut_action">开关</string>
 

@@ -9,8 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="8sp"
+        android:paddingRight="4dp"
         android:shadowColor="#ff000000"
-        android:shadowRadius="5"
+        android:shadowRadius="8"
         android:textColor="#FFFFFF" />
 
 </ScrollView>
