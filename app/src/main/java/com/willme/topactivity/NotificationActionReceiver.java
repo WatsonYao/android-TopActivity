@@ -63,7 +63,7 @@ public class NotificationActionReceiver extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                 .setContentTitle(context.getString(R.string.is_running,
                         context.getString(R.string.app_name)))
-                .setSmallIcon(R.drawable.ic_notification)
+                .setSmallIcon(R.drawable.ic_notify)
                 .setContentText(context.getString(R.string.touch_to_open))
                 .setColor(0xFFe215e0)
                 .setVisibility(NotificationCompat.VISIBILITY_SECRET)
