@@ -23,7 +23,7 @@ import java.util.TimerTask;
 public class WatchingService extends Service {
 
     private Handler mHandler = new Handler();
-    private  ActivityManager mActivityManager;
+    private ActivityManager mActivityManager;
     private String text = null;
     private Timer timer;
     private NotificationManager mNotiManager;
@@ -59,12 +59,13 @@ public class WatchingService extends Service {
 
             if (!act.equals(text)) {
                 text = act;
-                if(SPHelper.isShowWindow(WatchingService.this)){
-
+                if (SPHelper.isShowWindow(WatchingService.this)) {
                     mHandler.post(new Runnable() {
                         @Override
                         public void run() {
-                            TasksWindow.show(WatchingService.this, text);
+                            if (SPHelper.canUpdate(text)) {
+                                TasksWindow.show(WatchingService.this, text);
+                            }
                         }
                     });
                 }
