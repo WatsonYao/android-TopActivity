@@ -55,8 +55,7 @@ public class WatchingService extends Service {
         @Override
         public void run() {
             List<RunningTaskInfo> rtis = mActivityManager.getRunningTasks(1);
-            String act = rtis.get(0).topActivity.getPackageName() + "\n"
-                    + rtis.get(0).topActivity.getClassName();
+            String act = rtis.get(0).topActivity.getClassName();
 
             if (!act.equals(text)) {
                 text = act;

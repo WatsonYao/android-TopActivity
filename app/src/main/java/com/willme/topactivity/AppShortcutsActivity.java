@@ -33,7 +33,7 @@ public class AppShortcutsActivity extends Activity {
             TasksWindow.dismiss(this);
             NotificationActionReceiver.showNotification(this, true);
         }else{
-            TasksWindow.show(this, getPackageName()+"\n"+getClass().getName());
+            TasksWindow.show(this, getClass().getName());
             NotificationActionReceiver.showNotification(this, false);
         }
         sendBroadcast(new Intent(MainActivity.ACTION_STATE_CHANGED));

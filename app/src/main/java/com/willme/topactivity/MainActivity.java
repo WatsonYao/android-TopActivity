@@ -172,7 +172,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
             if(!isChecked){
                 TasksWindow.dismiss(this);
             }else{
-                TasksWindow.show(this, getPackageName()+"\n"+getClass().getName());
+                TasksWindow.show(this, getClass().getName());
             }
         }
     }

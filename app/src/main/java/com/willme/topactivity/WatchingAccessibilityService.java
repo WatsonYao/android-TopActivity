@@ -17,7 +17,7 @@ public class WatchingAccessibilityService extends AccessibilityService {
 
         if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED){
             if(SPHelper.isShowWindow(this)){
-                TasksWindow.show(this, event.getPackageName() + "\n" + event.getClassName());
+                TasksWindow.show(this, event.getClassName().toString());
             }
         }
 
