@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:textSize="8sp"
         android:paddingRight="4dp"
+        android:paddingLeft="4dp"
         android:shadowColor="#ff000000"
         android:shadowRadius="8"
         android:textColor="#FFFFFF" />

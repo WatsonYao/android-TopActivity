@@ -14,6 +14,9 @@ public class SPHelper {
         if (string.startsWith("android.")) {
             return false;
         }
+        if (string.startsWith("com.android")) {
+            return false;
+        }
         return true;
     }
 
