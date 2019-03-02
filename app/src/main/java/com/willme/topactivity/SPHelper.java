@@ -7,17 +7,11 @@ import android.text.TextUtils;
 
 public class SPHelper {
 
-    public static boolean canUpdate(String string) {
-        if (TextUtils.isEmpty(string)) {
-            return false;
+    public static boolean hasAndroidView(String string) {
+        if (TextUtils.isEmpty(string) || string.startsWith("android.") || string.startsWith("com.android")) {
+            return true;
         }
-        if (string.startsWith("android.")) {
-            return false;
-        }
-        if (string.startsWith("com.android")) {
-            return false;
-        }
-        return true;
+        return false;
     }
 
     public static boolean isShowWindow(Context context) {

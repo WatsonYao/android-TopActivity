@@ -63,9 +63,7 @@ public class WatchingService extends Service {
                     mHandler.post(new Runnable() {
                         @Override
                         public void run() {
-                            if (SPHelper.canUpdate(text)) {
                                 TasksWindow.show(WatchingService.this, text);
-                            }
                         }
                     });
                 }
