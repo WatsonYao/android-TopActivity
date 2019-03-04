@@ -65,7 +65,7 @@ public class NotificationActionReceiver extends BroadcastReceiver {
                         context.getString(R.string.app_name)))
                 .setSmallIcon(R.drawable.ic_notify)
                 .setContentText(context.getString(R.string.touch_to_open))
-                .setColor(0xFFe215e0)
+                .setColor(0xf48fb1)
                 .setVisibility(NotificationCompat.VISIBILITY_SECRET)
                 .setOngoing(!isPaused);
         if(isPaused){
