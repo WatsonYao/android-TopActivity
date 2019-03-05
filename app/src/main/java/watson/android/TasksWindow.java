@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+
 
 public class TasksWindow {
 
@@ -22,8 +23,8 @@ public class TasksWindow {
         sWindowParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
-                Build.VERSION.SDK_INT <= Build.VERSION_CODES.N ?
-                        WindowManager.LayoutParams.TYPE_TOAST : WindowManager.LayoutParams.TYPE_PHONE, 0x18,
+                Build.VERSION.SDK_INT < Build.VERSION_CODES.O ?
+                        WindowManager.LayoutParams.TYPE_TOAST : WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY, 0x18,
                 PixelFormat.TRANSLUCENT);
         sWindowParams.gravity = Gravity.RIGHT + Gravity.TOP;
         sView = LayoutInflater.from(context).inflate(R.layout.window_tasks,

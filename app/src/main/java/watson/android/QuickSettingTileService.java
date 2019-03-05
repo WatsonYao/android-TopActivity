@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
@@ -17,7 +17,7 @@ import android.service.quicksettings.TileService;
 @TargetApi(Build.VERSION_CODES.N)
 public class QuickSettingTileService extends TileService {
 
-    public static final String ACTION_UPDATE_TITLE = "com.willme.topactivity.ACTION.UPDATE_TITLE";
+    public static final String ACTION_UPDATE_TITLE = "watson.android.topactivity.ACTION.UPDATE_TITLE";
     private UpdateTileReceiver mReceiver;
 
     @Override

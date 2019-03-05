@@ -1,7 +1,8 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 
 public class PermissionsActivity extends Activity {
 

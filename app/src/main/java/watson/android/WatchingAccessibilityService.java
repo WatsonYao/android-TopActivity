@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.accessibilityservice.AccessibilityService;
 import android.annotation.SuppressLint;
