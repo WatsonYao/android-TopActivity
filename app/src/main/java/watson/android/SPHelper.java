@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.content.Context;
 import android.content.SharedPreferences;

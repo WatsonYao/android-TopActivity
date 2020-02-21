@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnCheckedChangeListener {
 
     public static final String EXTRA_FROM_QS_TILE = "from_qs_tile";
-    public static final String ACTION_STATE_CHANGED = "com.willme.topactivity.ACTION_STATE_CHANGED";
+    public static final String ACTION_STATE_CHANGED = "watson.android.ACTION_STATE_CHANGED";
     CompoundButton mWindowSwitch, mNotificationSwitch;
     private BroadcastReceiver mReceiver;
 

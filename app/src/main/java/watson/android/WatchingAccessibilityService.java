@@ -1,4 +1,4 @@
-package com.willme.topactivity;
+package watson.android;
 
 import android.accessibilityservice.AccessibilityService;
 import android.annotation.SuppressLint;
@@ -16,7 +16,7 @@ public class WatchingAccessibilityService extends AccessibilityService {
     public void onAccessibilityEvent(AccessibilityEvent event) {
 
         if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED){
-            if(SPHelper.isShowWindow(this)){
+            if(SPHelper.isShowWindow(this) && event.getClassName() != null){
                 TasksWindow.show(this, event.getClassName().toString());
             }
         }
